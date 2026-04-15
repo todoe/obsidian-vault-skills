@@ -27,6 +27,7 @@ description: "Master index for Obsidian skills suite. Routes to the right skill 
 | 书签、收藏 | `obsidian-bookmarks` | 书签列表/添加 |
 | 数据库、Bases、.base 文件 | `obsidian-bases` | 数据库查询、视图、创建项目 |
 | 同步、版本历史、恢复 | `obsidian-sync` | 同步状态、版本对比、版本恢复 |
+| 高级数据查询、跨笔记聚合 | `obsidian-dataview` | Dataview 查询（需安装插件） |
 
 ## 快速判断流程
 
@@ -55,7 +56,9 @@ description: "Master index for Obsidian skills suite. Routes to the right skill 
   │
   ├─ 提到数据库/Bases？ → obsidian-bases
   │
-  └─ 提到同步/版本/恢复？ → obsidian-sync
+  ├─ 提到同步/版本/恢复？ → obsidian-sync
+  │
+  └─ 需要高级查询/数据聚合？ → obsidian-dataview（需安装插件）
 ```
 
 ## 跨技能常见工作流
@@ -97,6 +100,13 @@ description: "Master index for Obsidian skills suite. Routes to the right skill 
 2. `obsidian-sync` — 对比版本差异
 3. `obsidian-sync` — 恢复目标版本
 
+### 工作流 6：高级数据分析
+
+1. `obsidian-dataview` — 检测插件是否安装
+2. `obsidian-dataview` — 执行跨笔记聚合查询（按属性筛选、分组统计等）
+3. `obsidian-links` — 结合链接数据生成知识库健康报告
+4. `obsidian-tags` — 结合标签数据完善分析
+
 ## 通用 CLI 语法
 
 所有技能都基于 Obsidian CLI，通用语法：
@@ -126,4 +136,4 @@ obsidian <command> content="第一行\n第二行\n第三行"
 | P0 | obsidian-vault, obsidian-notes, obsidian-links, obsidian-markdown | ✅ 已完成 |
 | P1 | obsidian-daily, obsidian-tasks, obsidian-properties, obsidian-templates | ✅ 已完成 |
 | P2 | obsidian-tags, obsidian-bookmarks, obsidian-bases, obsidian-sync | ✅ 已完成 |
-| P3 | obsidian-dataview | 📋 计划中 |
+| P3 | obsidian-dataview | ✅ 已完成（需安装 Dataview 插件） |
