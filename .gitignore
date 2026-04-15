@@ -13,6 +13,8 @@
 .junie/
 .vibe/
 .mux/
+.vscode/
+.idea/
 skills-lock.json
 .DS_Store
 *.swp
